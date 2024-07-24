@@ -1,0 +1,24 @@
+ <meta charset ="UTF-8">
+
+ <script>
+
+ function pulaLinha() {
+
+ 	document.write("<br><br>");
+
+ }
+
+ function mostra(texto) {
+
+ 	document.write(texto);
+ 	pulaLinha();
+
+ }
+
+ var tempo = 2022 - 1500
+ var geraçoes = tempo/28
+
+ mostra("Desde 1500 se passaram:" + tempo + " anos.");
+ mostra("Sendo que nesse tempo foram-se " + Math.round(geraçoes) + " gerações.");
+
+ </script>

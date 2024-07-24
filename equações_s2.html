@@ -1,0 +1,57 @@
+<meta charset ="UTF-8">
+
+ <h1> Equações de 2° grau</h1>
+
+<script>
+
+ function mostra(texto){
+
+ 	document.write(texto);
+ 	document.write('<br>');
+ }
+
+var a = parseInt(prompt('Digite o primeiro valor da equação que está elevado ao quadrado:'));
+var b = parseInt(prompt('Digite o segundo valor da equação que equivale a x:'));
+var c = parseInt(prompt('Digite o terceiro valor da equação:'));
+
+
+var delta = (b * b) - (4 * a * c);
+var raizDeDelta = Math.sqrt(delta);
+var raizDelta = Math.round(raizDeDelta);
+ 
+  var x1 = (-b + raizDeDelta) / (2 * a);
+  var x2 = (-b - raizDeDelta) / (2 * a);
+
+ mostra("Sendo uma equação de segundo grau, podemos começar com os coeficientes:");
+ mostra("a: " + a);
+ mostra("b:" + b);
+ mostra("c: " + c);
+
+ if(delta < 0){
+
+ mostra("Portando pegamos delta, que seria ( b² - (4.a.c) ). Obtendo o valor de delta:" + delta + '.');  
+ } else if (delta >= 0){
+ mostra("Portando pegamos delta, que seria ( b² - (4.a.c) ). Obtendo o valor da raiz de delta é: " + raizDelta + '.');
+ mostra("Assim podemos fazer a fórmula de Bhaskara, (-b ± √ Δ / 2.a), tendo uma ou mais respostas, ou até mesmo nenhuma.");
+}
+
+if(delta < 0){
+
+  mostra("Não há resolução para esta equação, pois o delta é menor que 0.");
+
+} 
+if(delta == 0){
+
+  mostra("Há apenas uma resposta para equação pois delta é igual a 0.");
+  mostra("Sendo assim a resposta é: " + x1);
+
+} 
+if(delta > 0){
+
+ mostra("Como delta é maior que zero, há duas respostas possíveis:");
+ mostra("x1 = " + x1);
+ mostra("x2 = " + x2);
+
+}
+ mostra("acabou o cálculo...");
+</script>

@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var C1 = parseInt(prompt("Digite o número da susbstância 1."));
+    var C2 = parseInt(prompt("Digite o número de substânica 2."));
+
+    C2 = C2 + 2;
+
+    if(C1 == C2 ) {
+
+        mostra("Acho que são substâncias parecidas");
+    } else {
+
+        mostra("São substâncias bem diferentes");
+    }
+
+</script>
